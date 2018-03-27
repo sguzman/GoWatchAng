@@ -6,13 +6,7 @@
     <pagination-controls (pageChange)="initPage = $event"></pagination-controls>
     <ul *ngFor="let item of shows | paginate: { itemsPerPage: perPage, currentPage: initPage }; let i = index">
       <li id={{i}} class="li-item">
-        <div class="div-item">
-          <img class="thumbnail" [lazyLoad]=item.animeHash.animeEps.anime.img />
-          <aside>
-            <h4 class="item-title">{{item.animeHash.animeEps.anime.title}}</h4>
-            <i>Episode(s) {{item.links.length}}</i>
-          </aside>
-        </div>
+        <app-anime-summary [item]="item" [idx]="i"></app-anime-summary>
       </li>
     </ul>
   </article>

@@ -1,0 +1,24 @@
+div.div-item {
+  height: 550px;
+  background-color: #FFC4DF;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  padding: 4px;
+  overflow: hidden;
+}
+
+img.thumbnail {
+  width: 255px;
+  height: 400px;
+}
+
+div.div-item:hover {
+  background-color: #a07989;
+}
+
+.item-title {
+  position: absolute;
+  text-align: center;
+  color: white;
+  font-size: x-large;
+}
