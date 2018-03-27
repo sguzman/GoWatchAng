@@ -1,9 +1,17 @@
 <main>
+  <div id="top-bar">
+    <h1 id="h1-title">{{title}}</h1>
+  </div>
   <article>
-    <ul *ngFor="let item of shows; let i = index">
+    <pagination-controls (pageChange)="initPage = $event"></pagination-controls>
+    <ul *ngFor="let item of shows | paginate: { itemsPerPage: perPage, currentPage: initPage }; let i = index">
       <li id={{i}} class="li-item">
-        <div>
+        <div class="div-item">
           <img class="thumbnail" [lazyLoad]=item.animeHash.animeEps.anime.img />
+          <aside>
+            <h4 class="item-title">{{item.animeHash.animeEps.anime.title}}</h4>
+            <i>Episode(s) {{item.links.length}}</i>
+          </aside>
         </div>
       </li>
     </ul>

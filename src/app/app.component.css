@@ -1,9 +1,44 @@
 img.thumbnail {
-  width: 355px;
-  height: 500px;
+  width: 255px;
+  height: 400px;
 }
 
 li.li-item {
   list-style-type: none;
   float: left;
+}
+
+#top-bar {
+  margin-top: 0;
+  top: 0;
+  background-color: #FFC4DF;
+}
+
+div.div-item {
+  height: 550px;
+  background-color: #FFC4DF;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  padding: 4px;
+  overflow: hidden;
+}
+
+div.div-item:hover {
+  background-color: #a07989;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+}
+
+.item-title {
+  position: absolute;
+  text-align: center;
+  color: white;
+  font-size: x-large;
+}
+
+pagination-controls {
 }

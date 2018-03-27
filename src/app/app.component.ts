@@ -9,6 +9,9 @@ declare var shows;
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  public title = 'Anime';
+  public initPage = 1;
+  public perPage = 25;
   public shows: AnimeTopInterface[];
 
   constructor() {

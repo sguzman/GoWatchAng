@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import {LazyLoadImageModule} from 'ng-lazyload-image';
+import {NgxPaginationModule} from 'ngx-pagination';
 
 
 @NgModule({
@@ -12,7 +13,8 @@ import {LazyLoadImageModule} from 'ng-lazyload-image';
   ],
   imports: [
     BrowserModule,
-    LazyLoadImageModule
+    LazyLoadImageModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]
