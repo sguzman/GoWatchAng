@@ -1,0 +1,9 @@
+img.thumbnail {
+  width: 355px;
+  height: 500px;
+}
+
+li.li-item {
+  list-style-type: none;
+  float: left;
+}

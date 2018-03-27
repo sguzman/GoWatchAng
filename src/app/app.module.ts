@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import {LazyLoadImageModule} from 'ng-lazyload-image';
 
 
 @NgModule({
@@ -10,7 +11,8 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    LazyLoadImageModule
   ],
   providers: [],
   bootstrap: [AppComponent]
